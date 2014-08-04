@@ -9,12 +9,11 @@ image: randomaas
 env:
     -  GOPATH==/var/cache/drone
 script:
-    -  go build
-    -  go test –v
-    -  go install
+    -  git pull
+    -  python randomaas/app/main.py
 services:
     -  redis
 notify:
   email:
     recipients:
-      - centurylinkcloud@gmail.com
+      - krazybean1@yahoo.com
