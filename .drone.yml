@@ -1,5 +1,6 @@
 image: ubuntu:14.04
 env:
+  - GOPATH=/var/cache/drone
   - DEBUG=true
 script:
   - wget http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
