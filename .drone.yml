@@ -10,6 +10,7 @@ env:
     -  GOPATH==/var/cache/drone
 script:
     -  git pull
+    -  python tests/maintest.py
 services:
     -  redis
 notify:
