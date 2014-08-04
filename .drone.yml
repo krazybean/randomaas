@@ -4,11 +4,10 @@ env:
   - DEBUG=true
 script:
   - wget http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
-  - docker build -t --rm Dockerfile Randomaas
+  - docker build -t Dockerfile Randomaas
 #services:
 #  - dockerfile/
 notify:
   email:
     recipients:
-      - krazybean1@yahoo.com
       - krazybean1@yahoo.com
