@@ -16,9 +16,9 @@ class TestMain(unittest.TestCase):
         m = main.randnum(6, 'num')
         self.assertTrue(bool(len(m) == 6))
 
-    def test_response(self):
-        r = urllib2.urlopen('http://localhost:9003')
-        self.assertTrue(r.code == 200)
+#    def test_response(self):
+#        r = urllib2.urlopen('http://localhost:9003')
+#        self.assertTrue(r.code == 200)
 
 if __name__=='__main__':
     unittest.main()
