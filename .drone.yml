@@ -1,0 +1,6 @@
+image: ubuntu:14.04
+name: randomaas
+services:
+  - postgres
+script:
+  - docker build -t randomaas http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
