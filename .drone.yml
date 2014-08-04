@@ -2,19 +2,12 @@ image: ubuntu:14.04
 env:
   - DEBUG=true
 script:
-  - apt-get install -y python
-  - apt-get install -y python-pip
-  - apt-get install -y virtualenv
-  - apt-get install -y python-virtualenv
-  - apt-get install -y git
-  - git clone http://gitlab.juancastro.org/juan/randomaas.git
-  - cd randomaas/
-  - pip install -r requirements.txt
-
-services:
-  - redis
+  - wget http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
+  - docker build -t --rm Dockerfile Randomaas
+#services:
+#  - dockerfile/
 notify:
   email:
     recipients:
-      - brad@drone.io
-      - burke@drone.io
+      - krazybean1@yahoo.com
+      - krazybean1@yahoo.com
