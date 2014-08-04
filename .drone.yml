@@ -4,8 +4,9 @@ env:
   - DEBUG=true
 script:
   - sudo apt-get install -y git
-  - wget http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
-  - docker build -rm -t Dockerfile Randomaas
+  - echo "test"
+#  - wget http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
+#  - docker build -rm -t Dockerfile Randomaas
 #services:
 #  - dockerfile/
 notify:
