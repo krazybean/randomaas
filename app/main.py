@@ -34,6 +34,7 @@ def readflie(file):
         return "unable to read config"
 
 def detect_types(filehandle):
+    fh = filehandle
     pass
 
 # controllers
