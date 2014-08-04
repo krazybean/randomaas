@@ -2,8 +2,8 @@
 
 import sys
 import os
-import requests
 import unittest
+import urllib2
 sys.path.insert(0,os.path.abspath(__file__+"/../.."))
 from app import main
 
@@ -17,8 +17,8 @@ class TestMain(unittest.TestCase):
         self.assertTrue(bool(len(m) == 6))
 
     def test_response(self):
-        r = requests.get('http://localhost:9003')
-        self.assertTrue(r.status_code == 200)
+        r = urllib2.urlopen('http://localhost:9003')
+        self.assertTrue(r.code == 200)
 
 if __name__=='__main__':
     unittest.main()
