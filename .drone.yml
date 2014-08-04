@@ -3,6 +3,7 @@ env:
   - GOPATH=/var/cache/drone
   - DEBUG=true
 script:
+  - sudo apt-get -y install git
   - wget http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
   - docker build -rm -t Dockerfile Randomaas
 #services:
