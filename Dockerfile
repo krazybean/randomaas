@@ -18,6 +18,7 @@ RUN git clone http://gitlab.juancastro.org/juan/randomaas.git
 # Not sure if needed
 RUN cd randomaas/
 
+# Install requirements
 RUN pip install -r randomaas/requirements.txt
 
 # Expose
