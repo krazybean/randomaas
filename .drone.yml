@@ -5,7 +5,7 @@
 #script:
 #  - docker build -t randomaas http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
 #
-image: ubuntu:14.04
+image: ubuntu
 env:
     -  GOPATH==/var/cache/drone
 script:
