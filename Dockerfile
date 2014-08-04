@@ -1,38 +1,21 @@
 FROM ubuntu:14.04
 
-# Update stuffs
-
-RUN apt-get update
+# Install python
 RUN apt-get install -y python
+
+# Install pip
 RUN apt-get install -y python-pip
-RUN apt-get install -y virtualenv
+
+# Install virtualenv
 RUN apt-get install -y python-virtualenv
+
+# Install git
 RUN apt-get install -y git
 
+# clone down the repo
 RUN git clone http://gitlab.juancastro.org/juan/randomaas.git
 
-RUN cd randomaas/
-
-RUN pip install -r requirements.txt
-
-# Expose
-EXPOSE 9003
-
-# Run
-CMD ["python", "/app/main.py"]
-root@juan-dockerbox:~/DockerImages# cat Randomaas/Dockerfile 
-FROM ubuntu:14.04
-
-# Update stuffs
-
-RUN apt-get update
-RUN apt-get install -y python
-RUN apt-get install -y python-pip
-RUN apt-get install -y python-virtualenv
-RUN apt-get install -y git
-
-RUN git clone http://gitlab.juancastro.org/juan/randomaas.git
-
+# Not sure if needed
 RUN cd randomaas/
 
 RUN pip install -r randomaas/requirements.txt
