@@ -1,6 +1,8 @@
 **Random-as-a-service**
 ===================
 
+[![Build Status](http://drone.juancastro.org/gitlab.juancastro.org/juan/randomaas/status.svg?branch=master)](http://drone.juancastro.org/gitlab.juancastro.org/juan/randomaas)
+
 This product is ment as a parody, nothing more.
 
 
