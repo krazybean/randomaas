@@ -1,7 +1,8 @@
 image: ubuntu:14.04
 name: randomaas-test
 script:
-  - docker build -rm -t randomaastest http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
+  - echo "Hello World"
+#  - docker build -rm -t randomaastest http://gitlab.juancastro.org/juan/randomaas/raw/master/Dockerfile
 notify:
   email:
     recipients:
