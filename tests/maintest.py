@@ -19,6 +19,5 @@ class TestMain(unittest.TestCase):
 #    def test_response(self):
 #        r = urllib2.urlopen('http://localhost:9003')
 #        self.assertTrue(r.code == 200)
-
 if __name__=='__main__':
     unittest.main()
